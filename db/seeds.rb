@@ -11,3 +11,5 @@ NailPolish.destroy_all
 User.create(name:"Megan")
 User.create(name:"Leigh")
 User.create(name:"Cat")
+
+NailPolish.create(name:"Matte", brand_name:"MAC", rating: 4, image_link:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZnjhj3wXt0cX-poPZUy0b4seR1JjiWmvgs3NmC2gVCKPC9YWhA")

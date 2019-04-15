@@ -2,12 +2,12 @@ class NailPolishesController < ApplicationController
 
     def index
         @nailpolishes = NailPolish.all 
-        render json: @nailpolishes, status: ok
+        render json: @nailpolishes, status: :ok
     end 
 
     def show 
         @nailpolish = NailPolish.find(params[:id])
-        render json: @nailpolishes, status: ok
+        render json: @nailpolishes, status: :ok
     end 
 
     def create 
@@ -33,6 +33,6 @@ class NailPolishesController < ApplicationController
     private 
 
     def nailpolish_params
-        params.permit(:id, :name, :color, :brand_name, :shade, :rating, :review)
+        params.permit(:id, :name, :color, :brand_name, :shade, :rating, :review, :image_link, :price)
     end 
 end
