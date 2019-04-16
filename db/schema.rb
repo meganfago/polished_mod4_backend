@@ -10,15 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_15_214412) do
+ActiveRecord::Schema.define(version: 2019_04_16_140940) do
 
   create_table "nail_polishes", force: :cascade do |t|
     t.string "name"
-    t.string "color"
     t.string "brand_name"
-    t.string "shade"
     t.integer "rating"
-    t.string "review"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image_link"

@@ -33,6 +33,6 @@ class NailPolishesController < ApplicationController
     private 
 
     def nailpolish_params
-        params.permit(:id, :name, :color, :brand_name, :shade, :rating, :review, :image_link, :price)
+        params.require(:nail_polish).permit(:name, :brand_name, :rating, :image_link, :price)
     end 
 end
